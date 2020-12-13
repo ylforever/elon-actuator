@@ -1,4 +1,4 @@
-.ideal
+.idea
 log
 target
-.iml
+*.iml
