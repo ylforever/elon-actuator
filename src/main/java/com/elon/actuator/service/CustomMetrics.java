@@ -12,10 +12,12 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class CustomMetrics {
+    // 保存自定义度量指标值
     private AtomicDouble value1 = new AtomicDouble(0);
     private AtomicDouble value2 = new AtomicDouble(0);
 
     public CustomMetrics(MeterRegistry registry) {
+        // 注册指标
         registry.gauge("custom.metrics1", value1);
         registry.gauge("custom.metrics2", value2);
     }

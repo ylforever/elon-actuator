@@ -21,7 +21,7 @@ public class CustomHealthIndicator implements HealthIndicator {
         /**
          * 搜集所有自定义指标数据，封装到Health中返回
          */
-        builder.withDetail("自定义健康指标1", "正常").withDetail("自定义指标指标2", "异常");
+        builder.withDetail("自定义健康指标1", "正常").withDetail("自定义健康指标2", "异常");
 
         return builder.build();
     }
